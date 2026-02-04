@@ -1,1 +1,0 @@
-This code takes the raw data available from the PADEP, snaps locations to the PA streamgrid so that locations can be delineated with the USGS streamstats API, and determines the density of active oil and gas wells within the drainage area of each sample
