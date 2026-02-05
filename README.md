@@ -1,5 +1,5 @@
 # OGD-on-BMI-communities
-This reposity is affiliated with the manuscript **"The Legacy of Conventional Oil and Gas Development Outweighs Shale Gas Impacts on Stream Biodiversity"** submitted to ES&T Water in Jan 2026.
+This repository is affiliated with the manuscript **"The Legacy of Conventional Oil and Gas Development Outweighs Shale Gas Impacts on Stream Biodiversity"** submitted to ES&T Water in Jan 2026.
 
 ## Project Summary
 This study analyses the ecological impact of oil and gas development (OGD) within the Appalachian Plateau region of Pennsylvania. Using statewide benthic macroinvertebrate (BMI) samples, we quantify the relationships between OGD presence/density and metrics of community composition. By identifying wells as either conventional or unconventional (employing horizontal drilling and/or hydraulic fracturing) we investigate whether BMI communities respond differently to different extraction methods. In addition to establish metrics of community composition, we employ novel co-occurence network analysis to investigate whether alterations in community stucture are associated with OGD. Our analyses reveals that unconventional OGD exerted limited but detectable ecological effects, whereas conventional OGD imposed broader stress on stream communities. 
