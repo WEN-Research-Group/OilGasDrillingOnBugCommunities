@@ -1,4 +1,5 @@
-# OGD-on-BMI-communities
+# OilGasDrillingOnBugCommunities
+
 This repository is affiliated with the manuscript **"The Legacy of Conventional Oil and Gas Development Outweighs Shale Gas Impacts on Stream Biodiversity"**, submitted to ES&T Water in Jan 2026.
 
 ## Project Summary
