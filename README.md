@@ -1,14 +1,16 @@
 # OilGasDrillingOnBugCommunities
 
-This repository is affiliated with the manuscript **"The Legacy of Conventional Oil and Gas Development Outweighs Shale Gas Impacts on Stream Biodiversity"**, submitted to ES&T Water in Jan 2026.
+This repository containis materials affiliated with the peer-review article **"The Legacy of Conventional Oil and Gas Development Outweighs Shale Gas Impacts on Stream Biodiversity"**, submitted to the *ACS ES&T Water*.
 
 ## Project Summary
-This study analyses the ecological impact of oil and gas development (OGD) within the Appalachian Plateau region of Pennsylvania. Using statewide benthic macroinvertebrate (BMI) samples, we quantify the relationships between OGD presence/density and metrics of community composition. By categorizing wells as either conventional or unconventional (utilizing horizontal drilling and/or hydraulic fracturing), we examine whether BMI communities exhibit distinct responses to different extraction methods. In addition to established metrics of community composition, we employ novel co-occurrence network analysis to investigate whether alterations in community structure are associated with OGD. Our analyses reveal that the effect of conventional well density was broadly associated with declines comparable to developed land cover, a known and observed stressor to BMI communities. Additionally, conventional well presence within a sample catchment was associated with altered network structure and higher proportions of generalist taxa. In contrast, unconventional well  density/presence was associated with limited effects on functional metrics and altered network structure. These results were interpreted to reflect the broader ecological stress imposed by legacy conventional OGD and relatively minor effects of unconventional OGD. 
+Unconventional oil and gas development (UOGD) has expanded rapidly across the Appalachian Basin, raising concerns about its ecological effects. Although UOGD has been linked to water quality changes that may affect stream biota, a generalized relationship with stream biota remains unresolved. We evaluated how UOGD and conventional oil and gas development (COGD) influence benthic macroinvertebrate (BMI) communities across the Marcellus Shale region of Pennsylvania using one of the most comprehensive statewide BMI datasets, integrating delineated catchments, oil-gas records, and more than 6,800 BMI samples. Linear mixed-effect models and co-occurrence network analyses were used to quantify effects on BMI taxonomy, functionality, and network structure while controlling for confounding factors. We found no significant association between UOGD intensity and BMI diversity metrics, whereas COGD intensity was correlated with reduced richness, diversity, and biotic integrity—comparable in magnitude to the impact of developed land cover. Network analyses indicated altered community structures near both development types: COGD was linked to larger, more connected networks dominated by pollution-tolerant taxa, while UOGD was associated with larger but more fragmented networks. Both forms of development were tied to increases in generalist taxa and declines in specialists. Overall, UOGD exerted limited but detectable ecological effects, whereas COGD imposed broader stress on stream communities. 
 
 ## Data
-BMI data, publicly available through the Pennsylvania Department of Environmental Protection (PADEP), was downloaded July 1,2024. Authors don't have permission to share raw OGD data. The processed dataset with information necessary for this study (location, well type, and API number) was aggregated into a single dataset. Both of these datasets are available in the data/ folder. BMI samples were processed through the USGS StreamStats API to delineate catchment areas and calculate basin characteristics, and geospatially joined with OGD locations to determine well presence/density within each sample catchment. Data preprocessing and quality control steps are detailed in the manuscript Materials and Methods section as well as S1.3 and S1.5 of the supplementary information. 
+BMI data, publicly available through the Pennsylvania Department of Environmental Protection (PADEP), was downloaded July 1,2024. a processed dataset containing the information necessary for this study (location, well type, and API number) was aggregated into a single dataset. Both datasets are available in the `data/` folder.
 
-The final datasets used in the analysis are available in the download_and_preprocess/processed_datasets/ folder. 
+BMI samples were processed through the USGS StreamStats API to delineate catchment areas and calculate basin characteristics. These data were then geospatially joined with OGD locations to determine well presence/density within each sample catchment. Data preprocessing and quality control procedures are detailed in the Materials and Methods section of the corresponding paper, as well as Sections S1.3 and S1.5 of the supplementary information.
+
+The final datasets used in the analysis are available in the `download_and_preprocess/processed_datasets/` folder. 
 
 ## Analysis
 ### 1. Linear Mixed-Effect Modeling
@@ -33,7 +35,7 @@ Linear mixed-effect models were used to estimate the effect of OGD on co-occuren
 ```bash
    map plotting.py
 ```
-This script plots a map of Pennsylvania with an outline of the Appalachian Plateau overlain with several layers relevant to this study. These include: oil and gas well locations, BMI sampling locations and catchment areas, locations of acid-mine drainage, and lvl 3 ecoregion.
+This script plots a map of Pennsylvania with an outline of the Appalachian Plateau overlain with several layers relevant to this study. These include: oil and gas well locations, BMI sampling locations and catchment areas, locations of acid-mine drainage, and level 3 ecoregion.
 
 ### 5. Supplementary Information
 ```bash
@@ -42,26 +44,23 @@ This script plots a map of Pennsylvania with an outline of the Appalachian Plate
 ```
 Statistical tests justifying the inclusion/exclusion of variables in modeling. This includes histograms for variable distributions, Kruskal and Wilcoxon tests to test significant differences between groups, regression analysis using spearmans rho for preliminary investigation, and mixed-effect modeling using only samples from wadeable streams to investigate the effect of catchment size on model results. All analysis is detailed in the Supplementary Information
 
-**Figures from the main text and SI showing the results of our analysis are stored in the figures/ folder.**
+### 6. Figures
+Figures from the main text and SI showing the results of our analyses are stored in the `figures/` folder.
 
 ## Requirements
 - R version 4.4.1 or higher
-- Libraries needed: *netassoc, readxl, tidyverse, lubridate, sp, FNN, sf, ggplot2, lme4, lmerTest, broom, performance, car, reformulas*
+- R libraries needed: *netassoc, readxl, tidyverse, lubridate, sp, FNN, sf, ggplot2, lme4, lmerTest, broom, performance, car, reformulas*
 
 - Python version 3.9.13 or higher
-- Libraries needed: *matplotlib, rasterio, pandas, geopandas, numpy, pyproj, shapely, requests, time, concurrent, openpyxl, seaborn, scipy, scikit_posthocs*
+- Python libraries needed: *matplotlib, rasterio, pandas, geopandas, numpy, pyproj, shapely, requests, time, concurrent, openpyxl, seaborn, scipy, scikit_posthocs*
 
 ## Citation
-If you use this code or data, please cite:
-
-XXXXXX
-
-[![DOI](https://zenodo.org/badge/1108703630.svg)](https://doi.org/10.5281/zenodo.18491666)
+If you use this code or data, please cite both [Paper DOI](https://doi.org/10.5281/zenodo.18491666) and [![Data DOI](https://zenodo.org/badge/1108703630.svg)](https://doi.org/10.5281/zenodo.18491666)
 
 ## Contact
 
-For questions, please reach out to Ryan Olivier-Meehan at rpolivie@syr.edu or Tao Wen at twen08@syr.edu.
+For questions, please reach out to Ryan Olivier-Meehan at rpolivie@syr.edu or Dr. Tao Wen at twen08@syr.edu.
 
 ## Acknowledgements
 
-This work was funded by the National Science Foundation Grant No. OAC-2209864.
+This material is based upon work supported by the National Science Foundation under Grant No. OAC-2209864 to Tao Wen. The authors would also like to acknowledge the help and support from Matthew Shank (PADEP).
