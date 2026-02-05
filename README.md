@@ -50,9 +50,6 @@ Statistical tests justifying the inclusion/exclusion of variables in modeling. T
 - Python version 3.9.13 or higher
 - Libraries needed: *matplotlib, rasterio, pandas, geopandas, numpy, pyproj, shapely, requests, time, concurrent, openpyxl, seaborn, scipy, scikit_posthocs*
 
-## Citation
-If you use this code or data, please cite:
-XXXXX
 
 ## Contact
 
@@ -61,5 +58,3 @@ For questions, please reach out to Ryan Olivier-Meehan at rpolivie@syr.edu or Ta
 ## Acknoledgements
 
 This work was funded by the National Science Foundation Grant No. OAC-2209864.
-
-
