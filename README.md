@@ -14,8 +14,17 @@ The final datasets used in analysis area available in the download_and_preproces
 ```bash
    NetworkCreator_3.R
 ```
-Co-occurrence networks were generated in R using the netassoc package using methodology established by [Simons 2019](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.5751)
+Co-occurrence networks were generated in R using the netassoc package using the framework established by [Simons 2019](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.5751). For each network generated, several metrics were calculated with the [igraph](https://zenodo.org/records/18060795) package to describe network structure: network size, connectance, modularity, mean co-occurance strength, and mean pollution tolerance. 
+
+### 2. Linear Mixed-Effect Modeling
+```bash
+   mixed effect modeling.R
+```
+Linear mixed-effect models from the [lme4](https://www.jstatsoft.org/article/view/v067i01) package were used to estimate the effects of unconventional and conventional OGD density on taxonomic and functional metrics. Unconventional well density, conventional well density, and the % of the catchment covered by developed land were used as fixed effects. Ecoregion and acid mine drainage presence/absence were included in these models as random effects to account for the significant effect of these variables. The selection of variables considered as random effects is explored in the supplementary information.
+
+### 3. Linear Mixed-Effect Modeling
 Figures from the main text and SI showing the results of our analysis are stored in the figures/ folder. 
+
 
 
 
