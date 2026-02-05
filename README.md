@@ -55,6 +55,6 @@ Statistical tests justifying the inclusion/exclusion of variables in modeling. T
 
 For questions, please reach out to Ryan Olivier-Meehan at rpolivie@syr.edu or Tao Wen at twen08@syr.edu.
 
-## Acknoledgements
+## Acknowledgements
 
 This work was funded by the National Science Foundation Grant No. OAC-2209864.
